@@ -1,0 +1,6 @@
+product_id,product_name,category,price,stock
+P001,Laptop,Electronics,1200,15
+P002,Headphones,Electronics,150,40
+P003,Smart Watch,Electronics,300,25
+P004,Gaming Mouse,Accessories,80,50
+P005,Keyboard,Accessories,100,35

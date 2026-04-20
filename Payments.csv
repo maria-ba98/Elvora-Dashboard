@@ -1,0 +1,6 @@
+payment_id,order_id,payment_method,payment_status
+PAY001,O001,Credit Card,Paid
+PAY002,O002,Cash,Paid
+PAY003,O003,PayPal,Paid
+PAY004,O004,Credit Card,Paid
+PAY005,O005,Cash,Pending
