@@ -9,49 +9,66 @@ st.set_page_config(page_title="Elvora Dashboard", layout="wide")
 st.markdown("""
 <style>
 
-/* الصفحة */
+/* page background */
 [data-testid="stAppViewContainer"] {
-    background-color: #f4f6f8;
+    background-color: #f8fafc;
 }
 
-/* المحتوى */
-[data-testid="stHeader"] {
-    background: transparent;
-}
-
-/* Sidebar */
+/* sidebar */
 section[data-testid="stSidebar"] {
-    background-color: #334155;
+    background-color: #1e293b;
 }
 
-section[data-testid="stSidebar"] * {
+/* sidebar text only */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span {
     color: white !important;
+}
+
+/* dropdown text */
+section[data-testid="stSidebar"] div[data-baseweb="select"] * {
+    color: black !important;
+}
+
+/* titles in main page */
+h1, h2, h3 {
+    color: #1e293b !important;
 }
 
 /* KPI Cards */
 div[data-testid="metric-container"] {
-    background-color: white;
-    border: 1px solid #e5e7eb;
-    padding: 18px;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    background: white;
+    border-left: 6px solid #1d4ed8;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
 
-/* عنوان */
-h1 {
-    color: #334155;
-    font-size: 38px;
-    font-weight: bold;
+/* KPI Label */
+div[data-testid="metric-container"] label {
+    color: #64748b !important;
+    font-size: 15px !important;
+    font-weight: 600;
 }
+
+/* KPI Number */
+div[data-testid="metric-container"] div {
+    color: #1e293b !important;
+    font-size: 28px !important;
+    font-weight: bold !important;
+}
+
+/* button */
 div.stDownloadButton {
     text-align: center;
 }
 
 div.stDownloadButton > button {
-    background-color: #334155;
+    background-color: #1d4ed8;
     color: white;
     border-radius: 12px;
-    padding: 10px 25px;
+    padding: 10px 24px;
     font-weight: bold;
     border: none;
 }
