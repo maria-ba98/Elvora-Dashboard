@@ -75,8 +75,6 @@ div[data-testid="metric-container"] [data-testid="stMetricValue"] {
     }
 }
 
-</style>
-""", unsafe_allow_html=True)
 
 /* button */
 div.stDownloadButton {
