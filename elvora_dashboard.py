@@ -36,28 +36,47 @@ h1, h2, h3 {
     color: #1e293b !important;
 }
 
-/* KPI Cards */
+
+/* KPI card */
 div[data-testid="metric-container"] {
     background: white;
-    border-left: 6px solid #1d4ed8;
-    padding: 20px;
+    border-left: 5px solid #1d4ed8;
+    padding: 16px;
     border-radius: 14px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* KPI Label */
+/* label */
 div[data-testid="metric-container"] label {
-    color: #64748b !important;
-    font-size: 15px !important;
-    font-weight: 600;
+    color: #475569 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
 }
 
-/* KPI Number */
-div[data-testid="metric-container"] div {
+/* value */
+div[data-testid="metric-container"] [data-testid="stMetricValue"] {
     color: #1e293b !important;
-    font-size: 28px !important;
+    font-size: 26px !important;
     font-weight: bold !important;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+    div[data-testid="metric-container"] {
+        padding: 12px;
+    }
+
+    div[data-testid="metric-container"] [data-testid="stMetricValue"] {
+        font-size: 22px !important;
+    }
+
+    div[data-testid="metric-container"] label {
+        font-size: 13px !important;
+    }
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 /* button */
 div.stDownloadButton {
