@@ -67,7 +67,7 @@ selected_city = st.sidebar.selectbox(
 )
 
 # database
-conn = sqlite3.connect("elvora_project/elvora.db")
+conn = sqlite3.connect("elvora.db")
 
 # ---------------- KPI ----------------
 query = """
